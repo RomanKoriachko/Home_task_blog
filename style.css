@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+.header {
+    background-color: #1d2126;
+    color: #a4aead;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    min-width: 1170px;
+}
+.col-1 {
+    width: 8.33333%;
+    padding: 0 15px;
+}
+.col-2 {
+    width: 16.66667%;
+    padding: 0 15px;
+}
+.col-3 {
+    width: 25%;
+    padding: 0 15px;
+}
+.col-4{
+    width: 33.33333%;
+    padding: 0 15px;
+}
+.col-5{
+    width: 41.66667%;
+    padding: 0 15px;
+}
+.col-6{
+    width: 50%;
+    padding: 0 15px;
+}
+.col-7{
+    width: 58.33333%;
+    padding: 0 15px;
+}
+.col-8{
+    width: 66.66667%;
+    padding: 0 15px;
+}
+.col-9{
+    width: 75%;
+    padding: 0 15px;
+}
+.col-10{
+    width: 83.33333%;
+    padding: 0 15px;
+}
+.col-11{
+    width: 91.66667%;
+    padding: 0 15px;
+}
+.col-12 {
+    width: 100%;
+    padding: 0 15px;
+}
+.top {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    height: 81px;
+    width: 1170px;
+    justify-content: center;
+    align-items: center;  
+}
+.menu {
+    display: flex;
+    margin-left: -15px;
+}
+.menu > li {
+    padding: 6px 10px;
+}
+.menu > li:not(:first-of-type) {
+    margin-left: 15px;
+    border: 1px solid #1d2126;
+    border-radius: 4px;
+}
+.menu > li:not(:first-of-type):hover {
+    border: 1px solid #5b6168;
+    border-radius: 4px;
+}
+.menu > li > a {
+    text-decoration: none;
+    color: #a4aead;
+}
+.home {
+    border: 1px solid #23b7a4;
+    border-radius: 4px; 
+}
+.home a {
+    color: #23b7a4 !important;
+}
+.search {
+    display: flex;
+    border: 1px solid #3c4147;
+    border-radius: 4px; 
+    padding: 4px 10px;
+}
+.search input {
+    background: none;
+    border: none;
+    width: 140px;
+    outline: none;
+    color: #a4aead;
+}
+.search button {
+    border: none;
+    background-image: url(images/seacrh.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #1d2126;
+    margin-left: 5px;
+    width: 30px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .header {
+        min-width: 426px;
+    }
+    .top {
+        max-width: 426px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo-block {
+    text-align: center;
+    }
+    .menu-mobile {
+        width: 425px;
+    }
+    .menu {
+        margin-left: 0;
+        overflow-x: scroll;
+    }
+    .search {
+        display: none;
+    } 
+}
+@media (max-width: 425px) {
+    .header {
+        min-width: 320px;
+    }
+    .top {
+       max-width: 320px;
+        flex-direction: column;
+    }   
+    .logo {
+        margin-left: -19px;
+    }
+    .menu-mobile {
+        width: 300px;
+    }
+    .menu {
+        overflow-x: scroll;
+        margin-left: 0;
+    }
+    .search {
+        display: none;
+    } 
+}
