@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,26 +14,95 @@
 </head>
 <body>
     <header class="header">
-        <div class="top">
-            <div class="col-3 logo-block">
-                <a href="" class="logo"><img src="images/logo.png" alt="Logo"></a>
-            </div>
-            <div class="col-7 menu-mobile">
-                <ul class="menu">
-                    <li class="home"><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">WORK</a></li>
-                    <li><a href="">TEAM</a></li>
-                    <li><a href="">SERVICES</a></li>
-                    <li><a href="">FEATURES</a></li>
-                    <li><a href="">CONTACT</a></li>
-                </ul>
-            </div>
-            <div class="col-2 search">
-                <input type="text" placeholder="SEARCH">
-                <button></button>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-3">
+                    <a href=""><img src="images/logo.png" alt="Logo"></a>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-7">
+                    <ul class="menu">
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">WORK</a></li>
+                        <li><a href="">TEAM</a></li>
+                        <li><a href="">SERVICES</a></li>
+                        <li><a href="">FEATURES</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="hidden-xs col-sm-2 col-lg-2 search">
+                    <form action="" class="form-search">
+                        <input type="text" placeholder="SEARCH">
+                        <button></button>
+                    </form>
+                </div>
             </div>
         </div>
     </header>
+    <main class="main">
+        <div class="slide1">
+            <div class="container slide1-main">
+                <div class="col-xs-12 col-sm-11 col-md-8 quattrocento">
+                    <p>WELCOME TO OUR MARKETPLACE</p>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 regular-text">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis vitae repellat, eius veniam blanditiis consequuntur odio eos consectetur excepturi voluptatibus minima itaque laudantium quisquam sint dolor ut porro tenetur.</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 slide1-btn">
+                    <button class="button"><a href="">VIEW MORE</a></button>
+                    <button class="button"><a href="">VIDEO TOUR</a></button>
+                </div>
+                <div class="slider-buttons">
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </div>
+            </div>
+        </div>
+        <div class="slide2">
+            <div class="container slide2-main">
+                <div class="row-indent">
+                    <div class="indent"></div>
+                    <div><p class="quattrocento slide2-header">WE ARE MODEST.</p></div>
+                </div>
+                <div class="slide2-content">
+                    <div class="col-xs-12 col-sm-12 col-md-7 regular-text slide2-text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem autem suscipit assumenda consequatur. Maiores porro quibusdam expedita quas iste incidunt fugiat quos animi perspiciatis est. Atque similique molestias minus nobis?</p>
+                        <p>Lorem ipsum dolor <span>sit amet consectetur adipisicing elit.</span> Nostrum eos sit possimus harum? Labore, blanditiis nesciunt enim autem modi, quas quibusdam ea sint doloremque id explicabo nisi, harum odit dignissimos!</p>
+                        <div class="btn-row">
+                            <button class="button-slide2 button-fb"><a href=""></a></button>
+                            <button class="button-slide2 button-twitter"><a href=""></a></button>
+                            <button class="button-slide2 button-google"><a href=""></a></button>
+                            <button class="button-slide2 button-ball"><a href=""></a></button>
+                            <button class="button-slide2 button-be"><a href=""></a></button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-5 slide2-list">
+                        <div class="row-content">
+                            <div class="green-bg">01</div>
+                            <div>
+                                <p class="quattrocento-smaller">DEDICATION TO THE CUSTOMERS</p>
+                                <p class="regular-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nemo aliquid quibusdam sed voluptatum enim.</p>
+                            </div>
+                        </div>
+                        <div class="row-content">
+                            <div class="green-bg">02</div>
+                            <div>
+                                <p class="quattrocento-smaller">WORKING CLOSELY WITH OUR CLIENTS</p>
+                                <P class="regular-text">Quidem autem suscipit assumenda consequatur. Maiores porro quibusdam expedita quas iste incidunt</P> 
+                            </div>
+                        </div>
+                        <div class="row-content">
+                            <div class="green-bg">03</div>
+                            <div>
+                                <p class="quattrocento-smaller">INCREASE HAPPINESS</p>
+                                <P class="regular-text">enim autem modi, quas quibusdam ea sint doloremque id explicabo nisi, harum odit dignissimos!</P>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
