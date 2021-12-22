@@ -41,7 +41,7 @@ body {
 .menu > li:hover {
     border: 1px solid #575d64;
     border-radius: 5px;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 .menu > li:active {
     border: 1px solid #39a493;
@@ -277,6 +277,10 @@ hr {
 .button-slide3 {
     background-color: #3a454d;
 }
+.button-slide3:hover {
+    background-color: #23b7a4;
+    transition: all 0.4s ease-in-out;
+}
 .employee-photo:hover .employee-main{
     background-color: #3a454d;
     color: white;
@@ -284,7 +288,6 @@ hr {
 }
 .employee-photo:hover .photo-hover {
     display: block;
-    transition: all 0.4s ease-in-out;
 }
 .employee-main {
     background-color: #e1e6ea;
