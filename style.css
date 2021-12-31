@@ -707,6 +707,9 @@ hr {
         height: 160px;
     }
     .form {
+        top: 0px;
+    }
+    .form:hover {
         top: -125px;
     }
 
