@@ -600,6 +600,12 @@ hr {
     .hidden-xs {
         display: none;
     }
+    .row-header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
     .nav-mobile-menu {
         width: 15px;
         height: 15px;
@@ -624,7 +630,7 @@ hr {
     }
     .navigation {
         position: fixed;
-        width: 280px;
+        width: 130px;
         max-width: 280px;
         top: 0;
         right: 0;
@@ -648,8 +654,16 @@ hr {
     .navigation.active-menu {
         opacity: 1;
         visibility: visible;
-        top:40px;
-        transform: translateX(0);
+        top:81px;
+        transform: translateX(8%);
+    }
+    .menu {
+        flex-direction: column;
+        
+    }
+    .menu>li {
+        border-radius: 0px;
+        background-color: #1d2126;
     }
 }
 @media (min-width:421px) {
