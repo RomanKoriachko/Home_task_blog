@@ -36,7 +36,7 @@ body {
 .menu > li {
     border: 1px solid #1d2126;
     border-radius: 5px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
 }
 .menu > li:hover {
     border: 1px solid #575d64;
@@ -630,7 +630,7 @@ hr {
     }
     .navigation {
         position: fixed;
-        width: 130px;
+        width: 120px;
         max-width: 280px;
         top: 0;
         right: 0;
@@ -654,8 +654,9 @@ hr {
     .navigation.active-menu {
         opacity: 1;
         visibility: visible;
+        position: fixed;
         top:81px;
-        transform: translateX(8%);
+        transform: translateX(0%);
     }
     .menu {
         flex-direction: column;
